@@ -1,0 +1,124 @@
+body {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding:0;
+    margin:0;
+    background: #3398E2;
+    color: #fff;
+    font-family: 'Microsoft YaHei';
+    text-align: center;
+    h1 {
+        // position:absolute;
+        width: 100%;
+        // top: 50%;
+        // margin-top: -20px;
+        font-size: 30px;
+        font-weight: 400;
+    }
+}
+
+div,span,p,input,button{
+    box-sizing: border-box;
+}
+
+input{
+    border: 0px solid #fff;
+    border-bottom-width: 1px;
+    background-color: transparent;
+    height:30px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 30px;
+    padding: 0 7px;
+    outline: none;
+    vertical-align: middle;
+}
+button{
+    border: none;
+    cursor: pointer;
+    // border: 1px solid #fff;
+    background-color: transparent;
+    height:30px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 30px;
+    outline: none;
+    vertical-align: middle;
+    padding: 0 10px;
+    transition: .3s;
+    &:hover{
+        transform: translateY(2px);
+        color: darken(#fff, 15%)
+    }
+}
+
+#container{
+    padding:20px;
+}
+
+.addText{
+    margin: 20px;
+    input {
+        width: 300px;
+    }
+    button {
+        margin-left: 10px;
+    }
+}
+
+.border1{
+    border: 1px solid #fff;
+}
+.pd20{
+    padding: 20px;
+}
+
+.text-item{
+    position: relative;
+    .remove{
+        float: right;
+        margin-top: 5px;
+    }
+    .no{
+        position: absolute;
+        top: 3px;
+        left: 5px;
+        font-size: .8em;
+    }
+}
+
+/*-------------icon---------------*/
+.icon-remove{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 13px;
+    height: 13px;
+    cursor: pointer;
+    transform:rotate(45deg);
+    transition: .2s ease-out;
+    // border: 1px solid #fff;
+    &:before,&:after{
+        content: '';
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width:2px;
+        height:12px;
+        background-color: #fff;
+    }
+    &:before{
+        left: 5px;
+    }
+    &:after{
+        left: 5px;
+        transform:rotate(90deg);
+    }
+    &:hover{
+        transform:rotate(130deg);
+    }
+}
